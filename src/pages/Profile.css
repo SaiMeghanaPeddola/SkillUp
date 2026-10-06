@@ -1,0 +1,278 @@
+.profile-page {
+  padding: 55px 70px;
+  background: #f6f7fb;
+  min-height: 100vh;
+  color: #111827;
+}
+
+/* Header */
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.profile-label {
+  color: #64748b;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 0 0 12px;
+}
+
+.profile-header h1 {
+  font-size: 42px;
+  margin: 0 0 10px;
+}
+
+.profile-header p {
+  color: #64748b;
+  font-size: 17px;
+}
+
+/* Button */
+
+.edit-profile-btn {
+  background: #6945f5;
+  color: white;
+  border: none;
+  padding: 15px 28px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.edit-profile-btn:hover {
+  background: #5735df;
+}
+
+/* Main grid */
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 25px;
+}
+
+/* Cards */
+
+.profile-card,
+.stats-card,
+.skills-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(40, 40, 80, 0.05);
+}
+
+/* Profile */
+
+.profile-card {
+  text-align: center;
+}
+
+.profile-avatar {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background: #eee8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  margin: 0 auto 10px;
+}
+
+.profile-card h2 {
+  font-size: 25px;
+  margin: 5px 0;
+}
+
+.profile-card h3 {
+  color: #6945f5;
+  margin-bottom: 30px;
+}
+
+/* Info */
+
+.profile-info {
+  text-align: left;
+}
+
+.info-row {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding: 17px 5px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.info-row span {
+  font-size: 23px;
+}
+
+.info-row strong {
+  font-size: 16px;
+}
+
+.info-row p {
+  margin: 4px 0 0;
+  color: #64748b;
+}
+
+/* Statistics */
+
+.stats-card h2 {
+  margin-top: 0;
+  font-size: 25px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.stat-box {
+  background: #f6f2ff;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.stat-box span {
+  font-size: 27px;
+}
+
+.stat-box h3 {
+  font-size: 25px;
+  margin: 12px 0 4px;
+}
+
+.stat-box p {
+  margin: 0;
+  color: #64748b;
+}
+
+/* Skills */
+
+.skills-card {
+  margin-top: 25px;
+}
+
+.skills-card h2 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.skills-card > p {
+  color: #64748b;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.skill-item > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.skill-item strong {
+  color: #6945f5;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 9px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-bar div {
+  height: 100%;
+  background: #6945f5;
+  border-radius: 10px;
+}
+
+/* Edit Form */
+
+.edit-form {
+  text-align: left;
+  margin-top: 25px;
+}
+
+.edit-form label {
+  display: block;
+  margin: 15px 0 7px;
+  font-weight: 600;
+}
+
+.edit-form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  border: 1px solid #d8dbea;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+.edit-form input:focus {
+  border-color: #6945f5;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.save-btn,
+.cancel-btn {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.save-btn {
+  background: #6945f5;
+  color: white;
+}
+
+.cancel-btn {
+  background: #eee8ff;
+  color: #6945f5;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .profile-page {
+    padding: 30px;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
